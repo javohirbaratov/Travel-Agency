@@ -1,0 +1,94 @@
+:root{
+    --frist-color: #212832;
+    --text-color-two: #DF6951;
+    --yellow-color: #F1A501;
+    --text-font-size: 17px;
+}
+
+/* HEADER  */
+
+body, .home-section{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.container{
+    padding: 0 1rem;
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: inline-block;
+}
+.menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+.menu ul a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: var(--frist-color);
+    transition: all .5s;
+    font-size: var(--text-font-size);
+}
+.menu ul a:hover{
+    color: var(--text-color-two);
+}
+.menu li button{
+    padding: .5rem;
+    background-color: transparent;
+}
+.table-button{
+    align-items: center;
+}
+.table-button button{
+    border: 1px solid var(--frist-color);
+    border-radius: 5px;
+}
+
+/* HOME SECTION  */
+.home-box{
+    display: flex;
+    justify-content: space-between;
+}
+.home-item{
+    width: 500px;
+}
+.home-box .content{
+    margin-top: 100px;
+}
+.content h3{
+    font-size: 20px;
+    color: var(--text-color-two);
+    text-transform: uppercase;
+}
+.content h1{
+    font-size: 54px;
+    color: var(--frist-color);
+}
+.content p{
+    font-size: 14px;
+    color: var(--frist-color);
+}
+.home-item .button-box button{
+    width: 170px;
+    height: 40px;
+    margin: .5rem;
+    background-color: var(--yellow-color);
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    /* padding: .3rem; */
+}
